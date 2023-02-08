@@ -9,7 +9,7 @@ namespace lab_1
 
         public TParallelepiped()
         {
-            h = 0;
+            h = 1;
         }
         public TParallelepiped(double a, double b, double h) : base(a, b)
         {
@@ -43,6 +43,11 @@ namespace lab_1
         public double volume()
         {
             return side_a * side_b  * h;
+        }
+
+        public bool Equals(TParallelepiped p2)
+        {
+            return side_a == p2.side_a && side_b == p2.side_b && h == p2.h;
         }
 
         public void compare(TParallelepiped pp2)

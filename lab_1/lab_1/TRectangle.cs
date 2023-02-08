@@ -56,6 +56,10 @@ namespace lab_1
             return (side_a + side_b) * 2;
         }
 
+        public bool Equals(TRectangle r2)
+        {
+            return side_a == r2.side_a && side_b == r2.side_b;
+        }
 
         public void compare(TRectangle rect2)
         {
@@ -142,6 +146,5 @@ namespace lab_1
             Console.WriteLine("Сторона a = " + side_a);
             Console.WriteLine("Сторона b = " + side_b);
         }
-
     }
 }
