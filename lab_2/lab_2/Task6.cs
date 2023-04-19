@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace lab_2
 {
@@ -75,7 +71,6 @@ namespace lab_2
 
                 while (index > 0 && curr_ch < characteristics[index - 1])
                 {
-                    // Помилка! Дубляж!
                     characteristics[index] = characteristics[index - 1];
                     copyRowToRow(matrix, index - 1, index);
                     index--;

@@ -38,21 +38,18 @@ namespace lab_2
             int curr;
 
             // сортування
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n; i+= 2)
             {
-                if (i%2 == 0)
+                for (int j = 0; j < m; j++)
                 {
-                    for (int j = 0; j < m; j++)
+                    index = j;
+                    curr = matrix[i, j];
+                    while (index > 0 && curr < matrix[i, index - 1])
                     {
-                        index = j;
-                        curr = matrix[i, j];
-                        while (index > 0 && curr < matrix[i, index - 1])
-                        {
-                            matrix[i, index] = matrix[i, index - 1];
-                            index--;
-                        }
-                        matrix[i, index] = curr;
+                        matrix[i, index] = matrix[i, index - 1];
+                        index--;
                     }
+                    matrix[i, index] = curr;
                 }
             }
 

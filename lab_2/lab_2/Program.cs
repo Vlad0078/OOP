@@ -81,7 +81,7 @@ namespace lab_2
             int min = Input.inputInt(min: (positive ? 0 : Int32.MinValue), message: "Введіть " +
                 (positive?"натуральне":"ціле") + " число!", clearConsole: false);
             Console.WriteLine("Введіть максимальне значення");
-            int max = Input.inputInt(min: (positive ? min : Int32.MinValue), message: "Введіть " + (positive ?
+            int max = Input.inputInt(min: min, message: "Введіть " + (positive ?
                 "натуральне" : "ціле") + " число, не менше за мінімальне значення!", clearConsole: false);
 
             double[] arr = new double[n];
