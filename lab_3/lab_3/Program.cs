@@ -154,15 +154,18 @@ namespace lab_3
                 Circle inCircle = new(triangle.GetInCircleRadius());
                 Circle circumCircle = new(triangle.GetCircumCircleRadius());
 
-                // Виводимо дані про кола
-                Console.WriteLine(" Вписане коло:" +
+                // Вивід даних
+                Console.WriteLine("\n Трикутник:" +
+                    "\n\t Периметр: " + Math.Round(triangle.Perimeter, 2) +
+                    "\n\t Площа: " + Math.Round(triangle.Area, 2));
+                Console.WriteLine("\n Вписане коло:" +
                     "\n\t Радіус: " + Math.Round(inCircle.Radius, 2) +
-                    "\n\t Периметр: " + Math.Round(inCircle.Perimeter, 2) +
-                    "\n\t Площа: " + Math.Round(inCircle.Area, 2));
-                Console.WriteLine(" Описане коло:" +
+                    "\n\t Довжина кола: " + Math.Round(inCircle.Perimeter, 2) +
+                    "\n\t Площа круга: " + Math.Round(inCircle.Area, 2));
+                Console.WriteLine("\n Описане коло:" +
                     "\n\t Радіус: " + Math.Round(circumCircle.Radius, 2) +
-                    "\n\t Периметр: " + Math.Round(circumCircle.Perimeter, 2) +
-                    "\n\t Площа: " + Math.Round(circumCircle.Area, 2));
+                    "\n\t Довжина кола: " + Math.Round(circumCircle.Perimeter, 2) +
+                    "\n\t Площа круга: " + Math.Round(circumCircle.Area, 2));
                 Console.ReadKey();
             }
         }

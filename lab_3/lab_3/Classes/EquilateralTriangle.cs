@@ -41,7 +41,7 @@ namespace lab_3
 
         protected override double CalcArea()
         {
-            return sideA * Math.Sqrt(3) / 4;
+            return sideA * sideA * Math.Sqrt(3) / 4;
         }
     }
 }
